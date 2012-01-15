@@ -78,4 +78,5 @@ BOARD_LIB_DUMPSTATE := libdumpstate.tuna
 
 BOARD_USES_SECURE_SERVICES := true
 
+BOARD_HAS_MTP := true
 BOARD_HAS_NO_SELECT_BUTTON := true
