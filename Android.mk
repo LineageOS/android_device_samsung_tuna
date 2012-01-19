@@ -22,6 +22,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
+ifeq ($(TARGET_DEVICE), tuna)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE := tuna_hdcp_keys
@@ -44,3 +45,5 @@ $(LOCAL_BUILT_MODULE):
 	$(hide) touch $@
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
+
+endif
