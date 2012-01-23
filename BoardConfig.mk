@@ -80,3 +80,4 @@ BOARD_USES_SECURE_SERVICES := true
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_USES_VIRTUAL_SDCARD := true
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/tuna/recovery_keys.c
