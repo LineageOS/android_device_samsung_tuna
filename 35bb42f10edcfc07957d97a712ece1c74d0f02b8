@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAQX//9UE\u003d",
+        "filename": "GNexusParts/AndroidManifest.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1078
+      },
+      "writtenOn": "2012-02-28T00:06:20Z",
+      "side": 0,
+      "message": "Only this line needs to be removed.",
+      "revId": "35bb42f10edcfc07957d97a712ece1c74d0f02b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
