@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAQX//8D0\u003d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1078
+      },
+      "writtenOn": "2012-03-04T15:59:29Z",
+      "side": 1,
+      "message": "\"tuning\"",
+      "revId": "294f164886039cf67fd99212abed2914afcdfbf2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
