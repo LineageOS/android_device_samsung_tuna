@@ -179,6 +179,9 @@ PRODUCT_PACKAGES += \
 	make_ext4fs \
 	setup_fs
 
+# Include kernel modules into compilation to copy
+include KernelModules.mk
+
 # for bugmailer
 PRODUCT_PACKAGES += send_bug
 PRODUCT_COPY_FILES += \
