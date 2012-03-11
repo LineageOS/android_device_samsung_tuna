@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAARH///bA\u003d",
+        "filename": "device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 183,
+      "author": {
+        "id": 523
+      },
+      "writtenOn": "2012-03-11T17:39:04Z",
+      "side": 1,
+      "message": "Breaks build for me on arch with no rule to make target KernelModules.mk.\n\nFix:\n$(call inherit-product, device/samsung/tuna/KernelModules.mk)",
+      "revId": "37adfdc0deab1718cd0df635d023db1d4255e1af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
