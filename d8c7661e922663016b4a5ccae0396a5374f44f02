@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAARX///iQ\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2012-03-18T00:38:37Z",
+      "side": 1,
+      "message": "spaties rond voodoo?",
+      "revId": "d8c7661e922663016b4a5ccae0396a5374f44f02",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAARX///iM\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2012-03-18T00:38:37Z",
+      "side": 1,
+      "message": "Kalibreer multiplicatoren van schermkleur?",
+      "revId": "d8c7661e922663016b4a5ccae0396a5374f44f02",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
