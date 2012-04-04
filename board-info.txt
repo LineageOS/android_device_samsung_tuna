@@ -1,3 +1,5 @@
 require board=tuna
+require version-bootloader=PRIMEKK15
+require version-bootloader=PRIMEKL01
 require version-bootloader=PRIMELA03
 
