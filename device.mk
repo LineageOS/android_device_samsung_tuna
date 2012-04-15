@@ -37,7 +37,8 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 PRODUCT_PACKAGES := \
 	lights.tuna \
 	charger \
-	charger_res_images
+	charger_res_images \
+	Torch
 
 PRODUCT_PACKAGES += \
 	sensors.tuna \
