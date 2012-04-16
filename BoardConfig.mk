@@ -32,7 +32,12 @@ TARGET_NO_BOOTLOADER := true
 BOARD_KERNEL_BASE := 0x80000000
 # BOARD_KERNEL_CMDLINE :=
 
-TARGET_PREBUILT_KERNEL := device/samsung/tuna/kernel
+ifneq ($(shell test -d kernel/samsung/tuna && echo 1),)
+    TARGET_KERNEL_SOURCE := kernel/samsung/tuna
+    TARGET_KERNEL_CONFIG := tuna_defconfig
+else
+    TARGET_PREBUILT_KERNEL := device/samsung/tuna/kernel
+endif
 
 TARGET_NO_RADIOIMAGE := true
 TARGET_BOARD_PLATFORM := omap4
