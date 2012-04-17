@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAASn///eM\u003d",
+        "filename": "BoardConfig.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 56
+      },
+      "writtenOn": "2012-04-17T21:34:25Z",
+      "side": 1,
+      "message": "change to tuna_defconfig to match repo",
+      "revId": "705a10958e0907de2476f5132769c08de63afe23",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
