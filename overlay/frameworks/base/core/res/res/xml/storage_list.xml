@@ -35,6 +35,7 @@
 <StorageList xmlns:android="http://schemas.android.com/apk/res/android">
     <storage android:mountPoint="/mnt/sdcard"
              android:storageDescription="@string/storage_internal"
+             android:storageLabel="EMMC"
              android:primary="true"
              android:emulated="true"
              android:mtpReserve="100" />
