@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "AAAAT3///JQ\u003d",
+        "filename": "GNexusParts/res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 32
+      },
+      "writtenOn": "2012-06-03T11:55:25Z",
+      "side": 1,
+      "message": "Only capitalize the first word",
+      "revId": "c9b18da9e6d9d5ec68e0dd34f7f6f251e8cb8c57",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAT3///RI\u003d",
         "filename": "GNexusParts/res/values/strings.xml",
         "patchSetId": 1
@@ -13,6 +30,40 @@
       "writtenOn": "2012-06-03T05:59:20Z",
       "side": 1,
       "message": "typos and capitalization on the above two strings",
+      "revId": "c9b18da9e6d9d5ec68e0dd34f7f6f251e8cb8c57",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAT3///JM\u003d",
+        "filename": "GNexusParts/src/com/cyanogenmod/settings/device/VibratorTuningPreference.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 233,
+      "author": {
+        "id": 32
+      },
+      "writtenOn": "2012-06-03T11:55:25Z",
+      "side": 1,
+      "message": "use lowercase for the first letter of method names.",
+      "revId": "c9b18da9e6d9d5ec68e0dd34f7f6f251e8cb8c57",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAT3///JI\u003d",
+        "filename": "GNexusParts/src/com/cyanogenmod/settings/device/VibratorTuningPreference.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 262,
+      "author": {
+        "id": 32
+      },
+      "writtenOn": "2012-06-03T11:55:25Z",
+      "side": 1,
+      "message": "camelCase",
       "revId": "c9b18da9e6d9d5ec68e0dd34f7f6f251e8cb8c57",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
