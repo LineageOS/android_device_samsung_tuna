@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAUH///Cs\u003d",
+        "filename": "device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 196,
+      "author": {
+        "id": 2928
+      },
+      "writtenOn": "2012-06-13T19:58:12Z",
+      "side": 1,
+      "message": "The / in front of system needs to be removed.",
+      "revId": "99adcbda06807872bd10b883f9d7ee94ecc7aad0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
