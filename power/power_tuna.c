@@ -55,25 +55,6 @@ static void sysfs_write(char *path, char *s)
     close(fd);
 }
 
-static void tuna_power_init(struct power_module *module)
-{
-    /*
-     * cpufreq interactive governor: timer 20ms, min sample 60ms,
-     * hispeed 700MHz at load 50%.
-     */
-
-    sysfs_write("/sys/devices/system/cpu/cpufreq/interactive/timer_rate",
-                "20000");
-    sysfs_write("/sys/devices/system/cpu/cpufreq/interactive/min_sample_time",
-                "60000");
-    sysfs_write("/sys/devices/system/cpu/cpufreq/interactive/hispeed_freq",
-                "700000");
-    sysfs_write("/sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load",
-                "50");
-    sysfs_write("/sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay",
-                "100000");
-}
-
 static int boostpulse_open(struct tuna_power_module *tuna)
 {
     char buf[80];
@@ -94,17 +75,6 @@ static int boostpulse_open(struct tuna_power_module *tuna)
 
     pthread_mutex_unlock(&tuna->lock);
     return tuna->boostpulse_fd;
-}
-
-static void tuna_power_set_interactive(struct power_module *module, int on)
-{
-    /*
-     * Lower maximum frequency when screen is off.  CPU 0 and 1 share a
-     * cpufreq policy.
-     */
-
-    sysfs_write("/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq",
-                on ? "1200000" : "700000");
 }
 
 static void tuna_power_hint(struct power_module *module, power_hint_t hint,
@@ -150,8 +120,6 @@ struct tuna_power_module HAL_MODULE_INFO_SYM = {
             methods: &power_module_methods,
         },
 
-       init: tuna_power_init,
-       setInteractive: tuna_power_set_interactive,
        powerHint: tuna_power_hint,
     },
 
