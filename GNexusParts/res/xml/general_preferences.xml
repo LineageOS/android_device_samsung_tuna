@@ -10,7 +10,6 @@
         android:summary="@string/vibrator_tuning_summary_head"
         />
 
-
     </PreferenceCategory>
 
 </PreferenceScreen>
