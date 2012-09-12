@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2011 The CyanogenMod Project
+ * Copyright (C) 2012 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -46,6 +46,7 @@ public class DeviceSettings extends Activity {
     public static final String KEY_VIBRATOR_TUNING = "vibrator_tuning";
     public static final String KEY_CATEGORY_RADIO = "category_radio";
     public static final String KEY_HSPA = "hspa";
+    public static final String KEY_WIFI_PM = "wifi_pm";
     public static final String KEY_GPU_OVERCLOCK = "gpu_overclock";
 
     ViewPager mViewPager;
@@ -71,6 +72,8 @@ public class DeviceSettings extends Activity {
                 GeneralFragmentActivity.class, null);
         mTabsAdapter.addTab(bar.newTab().setText(R.string.category_speed_title),
                 OverClockFragmentActivity.class, null);
+        mTabsAdapter.addTab(bar.newTab().setText(R.string.category_wifi_title),
+                WifiFragmentActivity.class, null);
 
         if (savedInstanceState != null) {
             bar.setSelectedNavigationItem(savedInstanceState.getInt("tab", 0));
