@@ -102,6 +102,10 @@ PRODUCT_PACKAGES += \
         Nfc \
         Tag
 
+#GNexusParts
+PRODUCT_PACKAGES += \
+	GNexusParts
+
 # Live Wallpapers
 PRODUCT_PACKAGES += \
         LiveWallpapers \
