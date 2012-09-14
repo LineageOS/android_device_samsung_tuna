@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAYX///mk\u003d",
+        "filename": "GNexusParts/res/values-ru/arrays.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 3835
+      },
+      "writtenOn": "2012-09-14T09:24:37Z",
+      "side": 1,
+      "message": "MHz must be in Russian.",
+      "revId": "bcd5f3d5d8527134f84795322c23a3af9f97129e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
