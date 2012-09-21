@@ -20,7 +20,6 @@
 #include <string.h>
 
 #include "common.h"
-#include "device.h"
 #include "screen_ui.h"
 
 const char* HEADERS[] = { "Volume up/down to move highlight;",
