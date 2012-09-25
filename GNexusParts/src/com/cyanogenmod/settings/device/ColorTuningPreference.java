@@ -58,7 +58,7 @@ public class ColorTuningPreference extends DialogPreference implements OnClickLi
     private ColorSeekBar mSeekBars[] = new ColorSeekBar[3];
 
     // Align MAX_VALUE with Voodoo Control settings
-    private static final int MAX_VALUE = Integer.MAX_VALUE - 2;
+    private static final int MAX_VALUE = 2000000000;
 
     // Track instances to know when to restore original color
     // (when the orientation changes, a new dialog is created before the old one
@@ -220,7 +220,7 @@ public class ColorTuningPreference extends DialogPreference implements OnClickLi
         }
 
         private void updateValue(int progress) {
-            mValueDisplay.setText(String.format("%.10f", (double) progress / MAX_VALUE));
+            mValueDisplay.setText(String.format("%d", (int) progress / 5000000));
         }
 
         public void SetNewValue(int iValue) {
@@ -245,20 +245,20 @@ public class ColorTuningPreference extends DialogPreference implements OnClickLi
     }
 
     private void SetCMSettings() {
-        mSeekBars[0].SetNewValue(1766478464);
-        mSeekBars[1].SetNewValue(1766478464);
-        mSeekBars[2].SetNewValue(1766478464);
+        mSeekBars[0].SetNewValue(1750000000);
+        mSeekBars[1].SetNewValue(1750000000);
+        mSeekBars[2].SetNewValue(1750000000);
     }
 
     private void SetDarkSettings() {
-        mSeekBars[0].SetNewValue(877466432);
-        mSeekBars[1].SetNewValue(877466432);
-        mSeekBars[2].SetNewValue(877466432);
+        mSeekBars[0].SetNewValue(900000000);
+        mSeekBars[1].SetNewValue(960000000);
+        mSeekBars[2].SetNewValue(1000000000);
     }
 
     private void SetDefaultSettings() {
-        mSeekBars[0].SetNewValue(MAX_VALUE);
-        mSeekBars[1].SetNewValue(MAX_VALUE);
-        mSeekBars[2].SetNewValue(MAX_VALUE);
+        mSeekBars[0].SetNewValue(1000000000);
+        mSeekBars[1].SetNewValue(1000000000);
+        mSeekBars[2].SetNewValue(1000000000);
     }
 }
