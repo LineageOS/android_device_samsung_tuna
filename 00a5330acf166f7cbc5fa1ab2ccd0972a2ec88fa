@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAYX//++s\u003d",
+        "filename": "GNexusParts/res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 176
+      },
+      "writtenOn": "2012-09-25T02:51:47Z",
+      "side": 1,
+      "message": "yo pondría que es la velocidad del procesador gráfico",
+      "revId": "00a5330acf166f7cbc5fa1ab2ccd0972a2ec88fa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
