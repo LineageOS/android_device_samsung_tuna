@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAYX//8xk\u003d",
+        "filename": "power/power_tuna.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 176
+      },
+      "writtenOn": "2012-09-25T02:54:23Z",
+      "side": 1,
+      "message": "remove all white spaces",
+      "revId": "55475b14790b135634954018b25ef4ac51c97495",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
