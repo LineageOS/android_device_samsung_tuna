@@ -19,6 +19,41 @@
     },
     {
       "key": {
+        "uuid": "AAAAYn///3I\u003d",
+        "filename": "GNexusParts/res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2012-09-27T11:05:07Z",
+      "side": 1,
+      "message": "Perhaps, \"Natural\" or \"Real\" are more descriptive than \"bright\" or \"dark\"\n\nWhat do you think about it?",
+      "parentUuid": "AAAAYn///4Y\u003d",
+      "revId": "5fc7d4dee3643a7e38b71a9be2344112c71eb1b3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAYn///3E\u003d",
+        "filename": "GNexusParts/res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2012-09-27T11:05:07Z",
+      "side": 1,
+      "message": "\"Optimum\" -\u003e \"Real\"?",
+      "revId": "5fc7d4dee3643a7e38b71a9be2344112c71eb1b3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAYn///4Q\u003d",
         "filename": "GNexusParts/res/values/strings.xml",
         "patchSetId": 2
@@ -30,6 +65,24 @@
       "writtenOn": "2012-09-27T09:55:16Z",
       "side": 1,
       "message": "The credits here aren\u0027t meant to be comprehensive of everyone modifying the code in this project.  I believe it was an attempt to credit the people responsible for the code in which this was borrowed.  No need to add to the list here.",
+      "revId": "5fc7d4dee3643a7e38b71a9be2344112c71eb1b3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAYn///3M\u003d",
+        "filename": "GNexusParts/res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2012-09-27T11:05:07Z",
+      "side": 1,
+      "message": "Credits are for people who set these settings. Anyway, I will eliminate my nick on the next commit, because some of the new settings is not mine and I do not need to see my nick here.",
+      "parentUuid": "AAAAYn///4Q\u003d",
       "revId": "5fc7d4dee3643a7e38b71a9be2344112c71eb1b3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
