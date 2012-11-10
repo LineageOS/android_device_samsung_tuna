@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAa3//9w4\u003d",
+        "filename": "GNexusParts/res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 4617
+      },
+      "writtenOn": "2012-11-10T17:22:54Z",
+      "side": 1,
+      "message": "\"Définition Gamma\" or simply \"Réglage de la Correction Gamma\"?",
+      "revId": "d872662b2ce30f1b09ba584c22e013a36f3defdb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
