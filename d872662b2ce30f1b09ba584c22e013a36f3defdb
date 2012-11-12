@@ -51,6 +51,23 @@
       "revId": "d872662b2ce30f1b09ba584c22e013a36f3defdb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3//9wI\u003d",
+        "filename": "GNexusParts/res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 2990
+      },
+      "writtenOn": "2012-11-12T15:46:11Z",
+      "side": 1,
+      "message": "\u003cstring name\u003d\"color_hack_presets_summary_head\"\u003ePréréglages du Gamma et des multiplicateurs testés par d\u0027autres utilisateurs\u003c/string\u003e",
+      "revId": "d872662b2ce30f1b09ba584c22e013a36f3defdb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
