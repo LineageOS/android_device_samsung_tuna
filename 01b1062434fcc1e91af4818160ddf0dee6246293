@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAa3//80w\u003d",
+        "filename": "GNexusParts/res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2012-11-13T03:28:32Z",
+      "side": 1,
+      "message": "\u0027Params. CM\u0027 like \"gamma2_title\"",
+      "revId": "01b1062434fcc1e91af4818160ddf0dee6246293",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3//80s\u003d",
+        "filename": "GNexusParts/res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2012-11-13T03:28:32Z",
+      "side": 1,
+      "message": "\"Matériel\"",
+      "revId": "01b1062434fcc1e91af4818160ddf0dee6246293",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3//80o\u003d",
+        "filename": "GNexusParts/res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2012-11-13T03:28:32Z",
+      "side": 1,
+      "message": "\"de la vibration\" \u003d\u003e \"du vibreur\" more understable?",
+      "revId": "01b1062434fcc1e91af4818160ddf0dee6246293",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3//80g\u003d",
+        "filename": "GNexusParts/res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2012-11-13T03:28:32Z",
+      "side": 1,
+      "message": "\"Définir l\u0027intensité du vibreur\" more understable?",
+      "revId": "01b1062434fcc1e91af4818160ddf0dee6246293",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3//80E\u003d",
+        "filename": "GNexusParts/res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2012-11-13T03:28:32Z",
+      "side": 1,
+      "message": "\"Vibreur\" more understable ?",
+      "revId": "01b1062434fcc1e91af4818160ddf0dee6246293",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
