@@ -1,0 +1,11 @@
+Change-Id: I5f98f93c54fbe3916c1c4ad040f9609a6fea3290
+Code-Review+1: Pavel Volkov <marshmollow@gmail.com>
+Code-Review+2: Rafael Salas <calimochoazucarado@gmail.com>
+Verified+1: Rafael Salas <calimochoazucarado@gmail.com>
+Code-Review+1: Igor Sokolov <wildfatduck@gmail.com>
+Code-Review+1: Krasnonozhenko Aleksey <acras1@gmail.com>
+Submitted-by: Rafael Salas <calimochoazucarado@gmail.com>
+Submitted-at: Mon, 12 Nov 2012 23:11:48 -0800
+Reviewed-on: http://review.cyanogenmod.org/26357
+Project: CyanogenMod/android_device_samsung_tuna
+Branch: refs/heads/jellybean
