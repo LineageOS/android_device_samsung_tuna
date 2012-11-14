@@ -16,6 +16,24 @@
       "revId": "cc7e6e26c879524ef580adfc2efe963a343e4540",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3//8W4\u003d",
+        "filename": "GNexusParts/res/values-fr/strings.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 4617
+      },
+      "writtenOn": "2012-11-14T23:29:48Z",
+      "side": 1,
+      "message": "?\nNot, it\u0027s good.",
+      "parentUuid": "AAAAa3//8Xg\u003d",
+      "revId": "cc7e6e26c879524ef580adfc2efe963a343e4540",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
