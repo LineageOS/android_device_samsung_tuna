@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAa3//8Xg\u003d",
+        "filename": "GNexusParts/res/values-fr/strings.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 2990
+      },
+      "writtenOn": "2012-11-14T23:17:32Z",
+      "side": 1,
+      "message": "Régle",
+      "revId": "cc7e6e26c879524ef580adfc2efe963a343e4540",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
