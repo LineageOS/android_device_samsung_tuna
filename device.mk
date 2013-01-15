@@ -50,8 +50,7 @@ PRODUCT_PACKAGES += \
 	audio.usb.default
 
 PRODUCT_COPY_FILES += \
-	device/samsung/tuna/audio/audio_policy.conf:system/etc/audio_policy.conf \
-	device/samsung/tuna/audio_effects.conf:system/vendor/etc/audio_effects.conf
+	device/samsung/tuna/audio/audio_policy.conf:system/etc/audio_policy.conf
 
 PRODUCT_PACKAGES += \
 	tuna_hdcp_keys
