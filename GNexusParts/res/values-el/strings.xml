@@ -3,12 +3,12 @@
     <string name="app_name">Ρυθμίσεις Galaxy Nexus</string>
 
     <string name="category_display_title">Οθόνη</string>
-    <string name="color_tuning_title_head">Ρύθμιση Πολλαπλασιαστή Χρώματος</string>
+    <string name="color_tuning_title_head">Ρύθμιση πολλαπλασιαστή Χρώματος</string>
     <string name="color_tuning_summary_head">Βαθμονόμηση πολλαπλασιαστή χρώματος της οθόνης</string>
-    <string name="gamma_tuning_title_head">Ρύθμιση 'γ' Διόρθωση Χρώματος</string>
-    <string name="gamma_tuning_summary_head">Βαθμονόμηση 'γ' διόρθωση χρώματος</string>
-    <string name="color_hack_presets_title_head">Προεπιλογές Ηack Χρώματος</string>
-    <string name="color_hack_presets_summary_head">Προεπιλογές για το 'γ' και πολλαπλασιαστές που έχουν δοκιμαστεί από ορισμένους χρήστες</string>
+    <string name="gamma_tuning_title_head">Ρύθμιση γ χρώματος</string>
+    <string name="gamma_tuning_summary_head">Βαθμονόμηση γ χρώματος</string>
+    <string name="color_hack_presets_title_head">Προεπιλογές hack Χρώματος</string>
+    <string name="color_hack_presets_summary_head">Προεπιλογές για το γ και πολλαπλασιαστές που έχουν δοκιμαστεί από ορισμένους χρήστες</string>
     <string name="color_red_title">Κόκκινο</string>
     <string name="color_green_title">Πράσινο</string>
     <string name="color_blue_title">Μπλέ</string>
@@ -19,11 +19,11 @@
     <string name="color2_title">Ρυθμ.CM</string>
     <string name="color3_title">Φυσικό</string>
     <string name="color_warning">Τιμές ανώτερες του 200 δεν συνιστώνται</string>
-    <string name="gamma_dss_title">Ρυθμ. DSS 'γ'</string>
+    <string name="gamma_dss_title">Ρυθμ. DSS γ</string>
 
     <string name="category_hardware_title">Υλικό</string>
-    <string name="vibrator_tuning_title_head">Ρύθμιση Δόνησής Ανάδρασης</string>
-    <string name="vibrator_tuning_summary_head">Ελέγχει την ισχύ προεπιλογής Δόνησής Ανάδρασης</string>
+    <string name="vibrator_tuning_title_head">Ρύθμιση δόνησής ανάδρασης</string>
+    <string name="vibrator_tuning_summary_head">Ελέγχει την ισχύ δόνησής ανάδρασης</string>
 
     <string name="vibrator_title">Δόνηση %</string>
     <string name="vibrator_default_title">Προεπιλογή</string>
@@ -38,8 +38,8 @@
     <string name="credits_presets">Credits: ale.landra91, cpaixao, provolinoo</string>
 
     <string name="category_touchkey_title">Πλήκτρα Αφής</string>
-    <string name="touchkey_notification_title_head">Ειδοποιήσεις Οπίσθιου Φωτισμού</string>
-    <string name="touchkey_notification_summary_head">Οπίσθιος Φωτισμος πλήκτρου αφής ενεργοποιείται όταν υπάρχει μια ειδοποίηση</string>
+    <string name="touchkey_notification_title_head">Ειδοποιήσεις οπίσθιου φωτισμού</string>
+    <string name="touchkey_notification_summary_head">Οπίσθιος φωτισμος πλήκτρου αφής ενεργοποιείται όταν υπάρχει μια ειδοποίηση</string>
 
     <string name="category_radio_title">Radio</string>
     <string name="hspa_title_head">HSPA</string>
