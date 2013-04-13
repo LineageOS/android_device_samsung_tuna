@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//7r0\u003d",
+        "filename": "GNexusParts/res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-04-13T03:05:17Z",
+      "side": 1,
+      "message": "\"CyanogenMod\" is too large. \"Ajustes CM\" is perfect (this is a xhdpi device).",
+      "revId": "b92637ef5029dacfeecd5882b0242cacf345a1c7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
