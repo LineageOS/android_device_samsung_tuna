@@ -406,6 +406,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//3z4\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-21T16:54:09Z",
+      "side": 1,
+      "message": "Je hebt gelijk, ik zat verkeerd te kijken: https://github.com/DhE17roms/android_device_samsung_tuna/blob/master/GNexusParts/res/values/strings.xml",
+      "parentUuid": "AAAAen//31A\u003d",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//34E\u003d",
         "filename": "GNexusParts/res/values-nl/strings.xml",
         "patchSetId": 2
