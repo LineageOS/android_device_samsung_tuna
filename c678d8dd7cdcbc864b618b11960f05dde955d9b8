@@ -1,0 +1,225 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//344\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-21T15:49:57Z",
+      "side": 1,
+      "message": "Veel te ingewikkeld.....\n\nBij de Galaxy S is het zo vertaald: \nhttps://github.com/CyanogenMod/android_device_samsung_aries-common/blob/cm-10.1/AriesParts/res/values-nl/strings.xml\n\n- Kleuren regelen\n\nof\n\n- Kleuren afstemmen",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//340\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-21T15:49:57Z",
+      "side": 1,
+      "message": "- Schermkleur kalibreren",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//34s\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-21T15:49:57Z",
+      "side": 1,
+      "message": "- Kleurengamma kalibreren",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//34k\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-21T15:49:57Z",
+      "side": 1,
+      "message": "- Vooraf ingestelde waarden voor kleur en gamma, getest door andere gebruikers",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//34g\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-21T15:49:57Z",
+      "side": 1,
+      "message": "Moet het zo kort?\n\nanders misschien alleen \n- CM",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//34c\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-21T15:49:57Z",
+      "side": 1,
+      "message": "- CM",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//34Q\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-21T15:49:57Z",
+      "side": 1,
+      "message": "- Waarden hoger dan 200 worden niet aangeraden",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//34M\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-21T15:49:57Z",
+      "side": 1,
+      "message": "- DSS-gamma",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//34I\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-21T15:49:57Z",
+      "side": 1,
+      "message": "- CPU\n\nof \n\n- Processor",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//34E\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-21T15:49:57Z",
+      "side": 1,
+      "message": "- Trilintensiteit instellen\n\n(zo is het nu ook op mijn i9100)",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//338\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-21T15:49:57Z",
+      "side": 1,
+      "message": "- Trilintensiteit",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//334\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-21T15:49:57Z",
+      "side": 1,
+      "message": "Realistisch?",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//330\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-21T15:49:57Z",
+      "side": 1,
+      "message": "Bestaat dit woord?\n\n- Donker, koud",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
