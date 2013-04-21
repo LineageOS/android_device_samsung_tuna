@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//33o\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-21T15:57:45Z",
+      "side": 1,
+      "message": "Alleen zijn die Engelse strings ook versimpeld, vandaar.",
+      "parentUuid": "AAAAen//344\u003d",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//340\u003d",
         "filename": "GNexusParts/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -30,6 +48,24 @@
       "writtenOn": "2013-04-21T15:49:57Z",
       "side": 1,
       "message": "- Schermkleur kalibreren",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//33k\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-21T15:57:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//340\u003d",
       "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -53,6 +89,41 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//33g\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-21T15:57:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//34s\u003d",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//33c\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-21T15:57:45Z",
+      "side": 1,
+      "message": "En deze? Anders is het zo dubbelop...",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//34k\u003d",
         "filename": "GNexusParts/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -64,6 +135,24 @@
       "writtenOn": "2013-04-21T15:49:57Z",
       "side": 1,
       "message": "- Vooraf ingestelde waarden voor kleur en gamma, getest door andere gebruikers",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//33Y\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-21T15:57:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//34k\u003d",
       "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -87,6 +176,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//33U\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-21T15:57:45Z",
+      "side": 1,
+      "message": "In het Engels is het \u0027CM Set.\u0027. Ik vind CM goed, moeten de Engelse vertalingen ook veranderd worden.",
+      "parentUuid": "AAAAen//34g\u003d",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//34c\u003d",
         "filename": "GNexusParts/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -98,6 +205,24 @@
       "writtenOn": "2013-04-21T15:49:57Z",
       "side": 1,
       "message": "- CM",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//33Q\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-21T15:57:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//34c\u003d",
       "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -121,6 +246,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//33M\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-21T15:57:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//34Q\u003d",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//34M\u003d",
         "filename": "GNexusParts/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -132,6 +275,24 @@
       "writtenOn": "2013-04-21T15:49:57Z",
       "side": 1,
       "message": "- DSS-gamma",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//33I\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-21T15:57:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//34M\u003d",
       "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -155,6 +316,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//33A\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-21T15:57:45Z",
+      "side": 1,
+      "message": "Dit omvat ook de aanraakknoppen en de GPU, niet?",
+      "parentUuid": "AAAAen//34I\u003d",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//34E\u003d",
         "filename": "GNexusParts/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -166,6 +345,24 @@
       "writtenOn": "2013-04-21T15:49:57Z",
       "side": 1,
       "message": "- Trilintensiteit instellen\n\n(zo is het nu ook op mijn i9100)",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//328\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-21T15:57:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//34E\u003d",
       "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -189,6 +386,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//320\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-21T15:57:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//338\u003d",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//334\u003d",
         "filename": "GNexusParts/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -206,6 +421,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//32w\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-21T15:57:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//334\u003d",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//330\u003d",
         "filename": "GNexusParts/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -217,6 +450,24 @@
       "writtenOn": "2013-04-21T15:49:57Z",
       "side": 1,
       "message": "Bestaat dit woord?\n\n- Donker, koud",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//32s\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-21T15:57:45Z",
+      "side": 1,
+      "message": "Geen flauw idee... Done",
+      "parentUuid": "AAAAen//330\u003d",
       "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
