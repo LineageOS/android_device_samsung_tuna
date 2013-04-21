@@ -124,6 +124,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//31Y\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-21T16:10:54Z",
+      "side": 1,
+      "message": "Hmm..\n\nGammacorrectie kalibreren?",
+      "parentUuid": "AAAAen//33c\u003d",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//34k\u003d",
         "filename": "GNexusParts/res/values-nl/strings.xml",
         "patchSetId": 2
@@ -188,6 +206,24 @@
       "side": 1,
       "message": "In het Engels is het \u0027CM Set.\u0027. Ik vind CM goed, moeten de Engelse vertalingen ook veranderd worden.",
       "parentUuid": "AAAAen//34g\u003d",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//31o\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-21T16:10:54Z",
+      "side": 1,
+      "message": "Ik zag dat het Duits het ook zo had (alleen \"CM\")",
+      "parentUuid": "AAAAen//33U\u003d",
       "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -328,6 +364,24 @@
       "side": 1,
       "message": "Dit omvat ook de aanraakknoppen en de GPU, niet?",
       "parentUuid": "AAAAen//34I\u003d",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//31g\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-21T16:10:54Z",
+      "side": 1,
+      "message": "Weet ik niet eerlijk gezegd.\nMaar in het Engels is het toch ook CPU?",
+      "parentUuid": "AAAAen//33A\u003d",
       "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
