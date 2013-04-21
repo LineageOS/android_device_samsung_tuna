@@ -388,6 +388,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//31A\u003d",
+        "filename": "GNexusParts/res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-21T16:15:50Z",
+      "side": 1,
+      "message": "Bij mij staat toch echt Hardware...",
+      "parentUuid": "AAAAen//31g\u003d",
+      "revId": "c678d8dd7cdcbc864b618b11960f05dde955d9b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//34E\u003d",
         "filename": "GNexusParts/res/values-nl/strings.xml",
         "patchSetId": 2
