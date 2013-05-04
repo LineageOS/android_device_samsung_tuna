@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAfX//+rk\u003d",
+        "filename": "GNexusParts/res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-05-04T20:26:23Z",
+      "side": 1,
+      "message": "Préréglage vs Préréglages",
+      "revId": "4a408d346a4fbc1105b3f2ad77916f42ce056794",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAfX//+rg\u003d",
+        "filename": "GNexusParts/res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-05-04T20:26:23Z",
+      "side": 1,
+      "message": "Remove \"%\"",
+      "revId": "4a408d346a4fbc1105b3f2ad77916f42ce056794",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAfX//+rc\u003d",
+        "filename": "GNexusParts/res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-05-04T20:26:23Z",
+      "side": 1,
+      "message": "rétro-éclairage vs rétroéclairage",
+      "revId": "4a408d346a4fbc1105b3f2ad77916f42ce056794",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
