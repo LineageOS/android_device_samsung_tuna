@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAfn///6k\u003d",
+        "filename": "GNexusParts/res/values-fr/arrays.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 3589
+      },
+      "writtenOn": "2013-05-07T07:20:04Z",
+      "side": 1,
+      "message": "Une \u0027D\u0027 majuscule s\u0027il vous plaît.",
+      "revId": "af2625b772930b7cad83b8a2bb31157b3c28b713",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAfn///6o\u003d",
+        "filename": "GNexusParts/res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 3589
+      },
+      "writtenOn": "2013-05-07T07:20:04Z",
+      "side": 1,
+      "message": "Paramètres avancés",
+      "revId": "af2625b772930b7cad83b8a2bb31157b3c28b713",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
