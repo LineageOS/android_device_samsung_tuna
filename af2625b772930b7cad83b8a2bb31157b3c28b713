@@ -33,6 +33,40 @@
       "revId": "af2625b772930b7cad83b8a2bb31157b3c28b713",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAfn///Pc\u003d",
+        "filename": "GNexusParts/res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-05-08T21:00:06Z",
+      "side": 1,
+      "message": "rétro-éclairage",
+      "revId": "af2625b772930b7cad83b8a2bb31157b3c28b713",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAfn///PY\u003d",
+        "filename": "GNexusParts/res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-05-08T21:00:06Z",
+      "side": 1,
+      "message": "rétro-éclairage",
+      "revId": "af2625b772930b7cad83b8a2bb31157b3c28b713",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
