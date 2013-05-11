@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f.MWEvE",
+        "filename": "GNexusParts/res/values-fr/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 4617
+      },
+      "writtenOn": "2013-05-11T16:59:00Z",
+      "side": 1,
+      "message": "Je suis partisan du rétroéclairage sans trait d\u0027union \u003d\u003e http://fr.wikipedia.org/wiki/R%C3%A9tro%C3%A9clairage",
+      "revId": "34d6a41f9ab171c17f2bfc245ba42a8199322247",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
