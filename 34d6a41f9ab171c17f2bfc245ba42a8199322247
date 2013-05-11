@@ -16,6 +16,24 @@
       "revId": "34d6a41f9ab171c17f2bfc245ba42a8199322247",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fwOhbqk",
+        "filename": "GNexusParts/res/values-fr/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-05-11T17:26:32Z",
+      "side": 1,
+      "message": "Voilà le site (de merde) officiel français \u003d\u003e http://www.culture.fr/Ressources/FranceTerme \u003d\u003e terme inconnu.\nVoilà le site québécois \u003d\u003e http://www.granddictionnaire.com/ficheOqlf.aspx?Id_Fiche\u003d8360755 \u003d\u003e c\u0027est bien \"rétroéclairage\" sans trait d\u0027union.\n\nJe corrige tout ça.",
+      "parentUuid": "f.MWEvE",
+      "revId": "34d6a41f9ab171c17f2bfc245ba42a8199322247",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
