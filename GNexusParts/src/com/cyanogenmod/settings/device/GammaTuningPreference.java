@@ -16,9 +16,12 @@
 
 package com.cyanogenmod.settings.device;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+import android.os.Bundle;
 import android.preference.DialogPreference;
 import android.preference.PreferenceManager;
 import android.util.AttributeSet;
@@ -27,26 +30,31 @@ import android.view.View.OnClickListener;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Button;
-import android.util.Log;
 
 /**
  * Special preference type that allows configuration of Gamma settings on Nexus
  * Devices
  */
-public class GammaTuningPreference extends DialogPreference implements OnClickListener {
+public class GammaTuningPreference extends DialogPreference {
 
-    private static final String TAG = "GAMMA...";
+    private static final String TAG = "Gamma";
 
     enum Colors {
         RED, GREEN, BLUE
     };
 
     private static final int[] SEEKBAR_ID = new int[] {
-            R.id.gamma_red_seekbar, R.id.gamma_green_seekbar, R.id.gamma_blue_seekbar, R.id.gamma_dss_seekbar
+            R.id.gamma_red_seekbar,
+            R.id.gamma_green_seekbar,
+            R.id.gamma_blue_seekbar,
+            R.id.gamma_dss_seekbar
     };
 
     private static final int[] VALUE_DISPLAY_ID = new int[] {
-            R.id.gamma_red_value, R.id.gamma_green_value, R.id.gamma_blue_value, R.id.gamma_dss_value
+            R.id.gamma_red_value,
+            R.id.gamma_green_value,
+            R.id.gamma_blue_value,
+            R.id.gamma_dss_value
     };
 
     private static final String[] FILE_PATH = new String[] {
@@ -74,6 +82,34 @@ public class GammaTuningPreference extends DialogPreference implements OnClickLi
     }
 
     @Override
+    protected void onPrepareDialogBuilder(AlertDialog.Builder builder) {
+        builder.setNeutralButton(R.string.reset,
+                new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+            }
+        });
+    }
+
+    @Override
+    protected void showDialog(Bundle state) {
+        super.showDialog(state);
+
+        // Can't use onPrepareDialogBuilder for this as we want the dialog
+        // to be kept open on click
+        AlertDialog d = (AlertDialog) getDialog();
+        Button defaultsButton = d.getButton(DialogInterface.BUTTON_NEUTRAL);
+        defaultsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                for (int i = 0; i < SEEKBAR_ID.length; i++) {
+                    mSeekBars[i].SetNewValue(0);
+                }
+            }
+        });
+    }
+
+    @Override
     protected void onBindDialogView(View view) {
         super.onBindDialogView(view);
 
@@ -82,21 +118,12 @@ public class GammaTuningPreference extends DialogPreference implements OnClickLi
         for (int i = 0; i < SEEKBAR_ID.length; i++) {
             SeekBar seekBar = (SeekBar) view.findViewById(SEEKBAR_ID[i]);
             TextView valueDisplay = (TextView) view.findViewById(VALUE_DISPLAY_ID[i]);
-            if (i < 3)
+            if (i < 3) {
                 mSeekBars[i] = new GammaSeekBar(seekBar, valueDisplay, FILE_PATH[i], OFFSET_VALUE, MAX_VALUE);
-            else
+            } else {
                 mSeekBars[i] = new GammaSeekBar(seekBar, valueDisplay, FILE_PATH[i], 0, 10);
+            }
         }
-        SetupButtonClickListeners(view);
-    }
-
-    private void SetupButtonClickListeners(View view) {
-            Button mButton1 = (Button)view.findViewById(R.id.btnGamma1);
-            Button mButton2 = (Button)view.findViewById(R.id.btnGamma2);
-            Button mButton3 = (Button)view.findViewById(R.id.btnGamma3);
-            mButton1.setOnClickListener(this);
-            mButton2.setOnClickListener(this);
-            mButton3.setOnClickListener(this);
     }
 
     @Override
@@ -135,11 +162,9 @@ public class GammaTuningPreference extends DialogPreference implements OnClickLi
             iValue = sharedPrefs.getInt(filePath, Integer.valueOf(sDefaultValue));
             if (bFirstTime){
                 Utils.writeValue(filePath, "0");
-                Log.d(TAG, "restore default value: 0 File: " + filePath);
             }
             else{
                 Utils.writeValue(filePath, String.valueOf((long) iValue));
-                Log.d(TAG, "restore: iValue: " + iValue + " File: " + filePath);
             }
         }
         if (bFirstTime)
@@ -248,41 +273,5 @@ public class GammaTuningPreference extends DialogPreference implements OnClickLi
             mOriginal = iValue;
             reset();
         }
-
-    }
-
-    public void onClick(View v) {
-        switch(v.getId()){
-            case R.id.btnGamma1:
-                    SetSettings1();
-                    break;
-            case R.id.btnGamma2:
-                    SetSettings2();
-                    break;
-            case R.id.btnGamma3:
-                    SetSettings3();
-                    break;
-        }
-    }
-
-    private void SetSettings1() {
-        mSeekBars[0].SetNewValue(0);
-        mSeekBars[1].SetNewValue(0);
-        mSeekBars[2].SetNewValue(0);
-        mSeekBars[3].SetNewValue(0);
-    }
-
-    private void SetSettings2() {
-        mSeekBars[0].SetNewValue(2);
-        mSeekBars[1].SetNewValue(15);
-        mSeekBars[2].SetNewValue(5);
-        mSeekBars[3].SetNewValue(8);
-    }
-
-    private void SetSettings3() {
-        mSeekBars[0].SetNewValue(-4);
-        mSeekBars[1].SetNewValue(0);
-        mSeekBars[2].SetNewValue(5);
-        mSeekBars[3].SetNewValue(0);
     }
 }
