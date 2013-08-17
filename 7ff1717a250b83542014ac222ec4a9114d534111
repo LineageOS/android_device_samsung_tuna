@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baee8101_900df439",
+        "filename": "init.tuna.rc",
+        "patchSetId": 4
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 10
+      },
+      "writtenOn": "2013-08-17T11:37:33Z",
+      "side": 1,
+      "message": "These shouldn\u0027t be necessary, we merged a patch to restorecon on sysfs from ueventd",
+      "revId": "7ff1717a250b83542014ac222ec4a9114d534111",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
