@@ -19,15 +19,16 @@ package org.cyanogenmod.hardware;
 import org.cyanogenmod.hardware.util.FileUtils;
 import java.io.File;
 
-public class DisplayColorCalibration {
-    private static final String[] FILE_PATH = new String[] {
-            "/sys/class/misc/samoled_color/red_multiplier",
-            "/sys/class/misc/samoled_color/green_multiplier",
-            "/sys/class/misc/samoled_color/blue_multiplier"
+public class DisplayGammaCalibration {
+
+    private static final String[] GAMMA_FILE_PATH = new String[] {
+            "/sys/class/misc/samoled_color/red_v1_offset",
+            "/sys/class/misc/samoled_color/green_v1_offset",
+            "/sys/class/misc/samoled_color/blue_v1_offset"
     };
 
     public static boolean isSupported() {
-        for (String i : FILE_PATH) {
+        for (String i : GAMMA_FILE_PATH) {
             if (!new File(i).exists()) {
                 return false;
             }
@@ -35,28 +36,32 @@ public class DisplayColorCalibration {
         return true;
     }
 
+    public static int getNumberOfControls() {
+        return 1;
+    }
+
     public static int getMaxValue()  {
-        return 2000000000;
+        return 20;
     }
 
     public static int getMinValue()  {
-        return 0;
+        return -20;
     }
 
-    public static String getCurColors()  {
-        StringBuilder colors = new StringBuilder();
-        for (String filePath : FILE_PATH) {
-            colors.append(FileUtils.readOneLine(filePath)).append(" ");
+    public static String getCurGamma(int control) {
+        StringBuilder values = new StringBuilder();
+        for (String gammaFilePath : GAMMA_FILE_PATH) {
+            values.append(FileUtils.readOneLine(gammaFilePath)).append(" ");
         }
-        return colors.toString();
+        return values.toString();
     }
 
-    public static boolean setColors(String colors)  {
-        String[] colorsSplit = colors.split(" ");
+       public static boolean setGamma(int control, String gamma) {
+        String[] valueSplit = gamma.split(" ");
         boolean result = true;
-        for (int i = 0; i < colorsSplit.length; i++) {
-            String currentFile = FILE_PATH[i];
-            result &= FileUtils.writeLine(currentFile, colorsSplit[i]);
+        for (int i = 0; i < valueSplit.length; i++) {
+            String currentFile = GAMMA_FILE_PATH[i];
+            result &= FileUtils.writeLine(currentFile, valueSplit[i]);
         }
         return result;
     }
