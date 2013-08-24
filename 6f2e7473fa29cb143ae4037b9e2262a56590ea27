@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "baee8101_05dd3642",
+        "filename": "cmhw/org/cyanogenmod/hardware/DisplayColorCalibration.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-24T01:36:25Z",
+      "side": 1,
+      "message": "Actually, the old ordering was correct according to the coding style guidelines.",
+      "revId": "6f2e7473fa29cb143ae4037b9e2262a56590ea27",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baee8101_850366b8",
         "filename": "cmhw/org/cyanogenmod/hardware/DisplayGammaCalibration.java",
         "patchSetId": 4
@@ -30,6 +47,23 @@
       "writtenOn": "2013-08-24T01:33:55Z",
       "side": 1,
       "message": "Now, we can set negative values for this.\n\nhttp://review.cyanogenmod.org/48901",
+      "revId": "6f2e7473fa29cb143ae4037b9e2262a56590ea27",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_e5e11200",
+        "filename": "cmhw/org/cyanogenmod/hardware/VibratorHW.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-24T01:36:25Z",
+      "side": 1,
+      "message": "As before.",
       "revId": "6f2e7473fa29cb143ae4037b9e2262a56590ea27",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
