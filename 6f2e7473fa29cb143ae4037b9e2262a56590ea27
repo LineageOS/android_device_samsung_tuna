@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baee8101_850366b8",
+        "filename": "cmhw/org/cyanogenmod/hardware/DisplayGammaCalibration.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-08-24T01:33:55Z",
+      "side": 1,
+      "message": "Better value. 200 is insane ;)",
+      "revId": "6f2e7473fa29cb143ae4037b9e2262a56590ea27",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_452c5e4a",
+        "filename": "cmhw/org/cyanogenmod/hardware/DisplayGammaCalibration.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-08-24T01:33:55Z",
+      "side": 1,
+      "message": "Now, we can set negative values for this.\n\nhttp://review.cyanogenmod.org/48901",
+      "revId": "6f2e7473fa29cb143ae4037b9e2262a56590ea27",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
