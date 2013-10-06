@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "9a41bdd9_25c85a74",
+        "filename": "liblight/lights.c",
+        "patchSetId": 6
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-10-06T09:27:43Z",
+      "side": 1,
+      "message": "static struct an30259a_pr_control g_led_states[LED_TYPE_LAST + 1];\n\nIs correct to solve the bug below?",
+      "revId": "ecd1d843ed1fea8ebe4806541445d80e889ec4dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a41bdd9_a29ea005",
         "filename": "liblight/lights.c",
         "patchSetId": 6
@@ -13,6 +30,24 @@
       "writtenOn": "2013-10-06T03:14:59Z",
       "side": 1,
       "message": "The index must be LED_TYPE_LAST - 1 to not exceed the array bounds (PS3 had that bug as well).",
+      "revId": "ecd1d843ed1fea8ebe4806541445d80e889ec4dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_e5a032a8",
+        "filename": "liblight/lights.c",
+        "patchSetId": 6
+      },
+      "lineNbr": 161,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-10-06T09:27:43Z",
+      "side": 1,
+      "message": "See above.",
+      "parentUuid": "9a41bdd9_a29ea005",
       "revId": "ecd1d843ed1fea8ebe4806541445d80e889ec4dd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -48,6 +83,24 @@
       "side": 1,
       "message": "I don\u0027t understand. A light is set with color !\u003d 0, but must be off? Which type is it? I don\u0027t remember any similar behaviour from mako liblights.\n\nAlso, can you please check is the kernel headers what the actual value of LED_LIGHT_OFF is?",
       "parentUuid": "9a41bdd9_02f3cc74",
+      "revId": "ecd1d843ed1fea8ebe4806541445d80e889ec4dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_65ce6285",
+        "filename": "liblight/lights.c",
+        "patchSetId": 6
+      },
+      "lineNbr": 191,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-10-06T09:27:43Z",
+      "side": 1,
+      "message": "In linux/leds-an30259a.h the values are:\n#define LED_LIGHT_OFF 0\n#define LED_LIGHT_ON 1\n#define LED_LIGHT_PULSE 2\n#define LED_LIGHT_SLOPE 3\n\nIs this that you ask?",
+      "parentUuid": "9a41bdd9_e294a8e9",
       "revId": "ecd1d843ed1fea8ebe4806541445d80e889ec4dd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
