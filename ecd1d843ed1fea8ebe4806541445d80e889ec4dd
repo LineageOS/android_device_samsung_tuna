@@ -158,6 +158,24 @@
       "revId": "ecd1d843ed1fea8ebe4806541445d80e889ec4dd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_4590feec",
+        "filename": "liblight/lights.c",
+        "patchSetId": 6
+      },
+      "lineNbr": 191,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-10-06T19:58:44Z",
+      "side": 1,
+      "message": "That doesn\u0027t yet answer my question:\n- Is the type parameter 1 (for notification) for the occurrence?\n- If it is, isn\u0027t it followed by another call into here with type\u003d1 and color\u003d0 (this is supposed to happen when e.g. unlocking the screen)? This should set the state to OFF again.\n\nI ask because no such special treatment of the battery light is needed on mako, so I suspect this is a band aid for a different problem. If it isn\u0027t, I\u0027d like this to be fully understood at least.",
+      "parentUuid": "9a41bdd9_658982ca",
+      "revId": "ecd1d843ed1fea8ebe4806541445d80e889ec4dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
