@@ -176,6 +176,24 @@
       "revId": "ecd1d843ed1fea8ebe4806541445d80e889ec4dd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_655e6247",
+        "filename": "liblight/lights.c",
+        "patchSetId": 6
+      },
+      "lineNbr": 191,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-10-06T22:40:34Z",
+      "side": 1,
+      "message": "Actually, I\u0027m willing to bet that it\u0027s the attention light that causes this. It\u0027s turned off by PowerManager by setting turnOnMS \u003d turnOffMS \u003d 0. That wouldn\u0027t exactly match your fix, though.\n\nCan you please add a line like this:\n\nALOGD(\"set_light_leds: type %d, color %08x, mode %d, on %d off %d\", type, state-\u003ecolor, state-\u003eflashMode, state-\u003eflashOnMS, state-\u003eflashOffMS);\n\nto the beginning of the function and provide a log of startup to white being permanently lit? Thanks.",
+      "parentUuid": "9a41bdd9_4590feec",
+      "revId": "ecd1d843ed1fea8ebe4806541445d80e889ec4dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
