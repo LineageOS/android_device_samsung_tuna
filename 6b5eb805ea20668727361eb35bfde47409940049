@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a41bdd9_424b14b1",
+        "filename": "liblight/lights.c",
+        "patchSetId": 5
+      },
+      "lineNbr": 186,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-10-06T02:24:41Z",
+      "side": 1,
+      "message": "I\u0027m testing with:\n                       if (type !\u003d LED_TYPE_CHARGING) {\n                               led_state-\u003estate \u003d LED_LIGHT_OFF;\n                       } else {\n                               led_state-\u003estate \u003d LED_LIGHT_ON;\n                       }",
+      "revId": "6b5eb805ea20668727361eb35bfde47409940049",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
