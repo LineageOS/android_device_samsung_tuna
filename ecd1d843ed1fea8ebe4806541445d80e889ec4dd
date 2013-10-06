@@ -194,6 +194,24 @@
       "revId": "ecd1d843ed1fea8ebe4806541445d80e889ec4dd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_88105b50",
+        "filename": "liblight/lights.c",
+        "patchSetId": 6
+      },
+      "lineNbr": 191,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-10-06T23:56:18Z",
+      "side": 1,
+      "message": "You can see the log in: http://pastebin.com/tqmX8MF6\n\nPerhaps the problem is at line 7, when a first notification of the system is received. Type 0 doesn\u0027t go to color 0x000000.",
+      "parentUuid": "9a41bdd9_655e6247",
+      "revId": "ecd1d843ed1fea8ebe4806541445d80e889ec4dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
