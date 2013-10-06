@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "9a41bdd9_e5c6f215",
+        "filename": "liblight/lights.c",
+        "patchSetId": 6
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-10-06T17:28:21Z",
+      "side": 1,
+      "message": "That would\u0027ve been the alternative to my suggestion below, yes. It doesn\u0027t matter which one is used to fix the problem, although my way uses less memory ;)",
+      "parentUuid": "9a41bdd9_25c85a74",
+      "revId": "ecd1d843ed1fea8ebe4806541445d80e889ec4dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a41bdd9_a29ea005",
         "filename": "liblight/lights.c",
         "patchSetId": 6
@@ -101,6 +119,24 @@
       "side": 1,
       "message": "In linux/leds-an30259a.h the values are:\n#define LED_LIGHT_OFF 0\n#define LED_LIGHT_ON 1\n#define LED_LIGHT_PULSE 2\n#define LED_LIGHT_SLOPE 3\n\nIs this that you ask?",
       "parentUuid": "9a41bdd9_e294a8e9",
+      "revId": "ecd1d843ed1fea8ebe4806541445d80e889ec4dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_05cc3634",
+        "filename": "liblight/lights.c",
+        "patchSetId": 6
+      },
+      "lineNbr": 191,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-10-06T17:28:21Z",
+      "side": 1,
+      "message": "Yes. I just wanted to know whether by doing the initial memset() the state is set of off - turns out it is.\n\nI\u0027m still interested in the type of the light which comes in as solid white, but needs to be off, though.",
+      "parentUuid": "9a41bdd9_65ce6285",
       "revId": "ecd1d843ed1fea8ebe4806541445d80e889ec4dd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
