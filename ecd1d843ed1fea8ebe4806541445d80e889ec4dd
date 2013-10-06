@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a41bdd9_02f3cc74",
+        "filename": "liblight/lights.c",
+        "patchSetId": 6
+      },
+      "lineNbr": 191,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-10-06T02:45:08Z",
+      "side": 1,
+      "message": "It solves the problem with LED on charging.",
+      "revId": "ecd1d843ed1fea8ebe4806541445d80e889ec4dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
