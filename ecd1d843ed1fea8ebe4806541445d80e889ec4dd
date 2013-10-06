@@ -140,6 +140,24 @@
       "revId": "ecd1d843ed1fea8ebe4806541445d80e889ec4dd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_658982ca",
+        "filename": "liblight/lights.c",
+        "patchSetId": 6
+      },
+      "lineNbr": 191,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-10-06T19:31:19Z",
+      "side": 1,
+      "message": "This state (solid white) happens when the first notification is received and only get turn off through a reboot.",
+      "parentUuid": "9a41bdd9_05cc3634",
+      "revId": "ecd1d843ed1fea8ebe4806541445d80e889ec4dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
