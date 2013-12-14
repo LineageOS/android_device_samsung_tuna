@@ -1,0 +1,5 @@
+lib/libdrmdecrypt.so
+lib/libsecril-client.so
+vendor/etc/sirfgps.conf
+vendor/firmware/bcm4330.hcd
+vendor/lib/hw/gps.omap4.so
