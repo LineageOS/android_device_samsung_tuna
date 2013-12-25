@@ -200,6 +200,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
         ro.zygote.disable_gl_preload=true
 
+# Dexopt /system apps to /cache
+PRODUCT_PROPERTY_OVERRIDES += \
+        dalvik.vm.dexopt-data-only=0
+
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 $(call inherit-product-if-exists, vendor/nxp/pn544/nxp-pn544-fw-vendor.mk)
