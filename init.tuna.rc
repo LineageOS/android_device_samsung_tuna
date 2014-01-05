@@ -20,6 +20,10 @@ on init
     mkdir /mnt/media_rw/usbdisk 0775 system system
     mkdir /storage/usbdisk 0000 system system
 
+    # activate zram
+    swapon_all fstab.tuna
+    write /proc/sys/vm/page-cluster 0
+
 on post-fs-data
     mkdir /data/media 0770 media_rw media_rw
 
