@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+DEVICE_FOLDER := device/samsung/tuna
+
 # Hardware
 BOARD_HARDWARE_CLASS := device/samsung/tuna/cmhw
 
@@ -28,15 +30,17 @@ USE_CAMERA_STUB := true
 TARGET_BOARD_INFO_FILE ?= device/samsung/tuna/board-info.txt
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR ?= device/samsung/tuna/bluetooth
 
+# Processor
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true
+TARGET_CPU_VARIANT := cortex-a9
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
-TARGET_CPU_VARIANT := cortex-a9
 
 TARGET_NO_BOOTLOADER := true
 
+# Kernel
 BOARD_KERNEL_BASE := 0x80000000
 # BOARD_KERNEL_CMDLINE :=
 
@@ -50,7 +54,8 @@ TARGET_NO_RADIOIMAGE := true
 TARGET_BOARD_PLATFORM := omap4
 TARGET_BOOTLOADER_BOARD_NAME := tuna
 
-BOARD_EGL_CFG := device/samsung/tuna/egl.cfg
+# EGL
+BOARD_EGL_CFG := $(DEVICE_FOLDER)/prebuilt/lib/egl/egl.cfg
 BOARD_CREATE_TUNA_HDCP_KEYS_SYMLINK := true
 
 #BOARD_USES_HGL := true
@@ -74,7 +79,7 @@ BOARD_RECOVERY_SWIPE := true
 TARGET_RECOVERY_UPDATER_LIBS += librecovery_updater_tuna
 TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/tuna
 
-TARGET_RECOVERY_FSTAB = device/samsung/tuna/fstab.tuna
+TARGET_RECOVERY_FSTAB = device/samsung/tuna/rootdir/fstab.tuna
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 685768704
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 14539537408
