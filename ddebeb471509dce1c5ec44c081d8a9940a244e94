@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a061dce_23123563",
+        "filename": "device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1579
+      },
+      "writtenOn": "2014-07-17T00:55:24Z",
+      "side": 1,
+      "message": "Please use spaces instead of tab",
+      "revId": "ddebeb471509dce1c5ec44c081d8a9940a244e94",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
