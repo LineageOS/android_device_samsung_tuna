@@ -16,6 +16,24 @@
       "revId": "ddebeb471509dce1c5ec44c081d8a9940a244e94",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a061dce_594bd62b",
+        "filename": "device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 10245
+      },
+      "writtenOn": "2014-07-18T06:07:47Z",
+      "side": 1,
+      "message": "Why? It used tabs originally... I don\u0027t want to mix spaces with tabs, let\u0027s keep it consistent...",
+      "parentUuid": "9a061dce_23123563",
+      "revId": "ddebeb471509dce1c5ec44c081d8a9940a244e94",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
