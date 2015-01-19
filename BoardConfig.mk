@@ -190,7 +190,9 @@ BOARD_SEPOLICY_UNION += \
         init.te \
         mediaserver.te \
         pvrsrvinit.te \
-        rild.te
+        rild.te \
+        setup_fs.te \
+        smc_pa.te
 
 # Recovery
 RECOVERY_FSTAB_VERSION := 2
