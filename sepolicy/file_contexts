@@ -40,3 +40,7 @@
 /system/vendor/bin/fRom u:object_r:fRom_exec:s0
 /system/bin/setup_fs u:object_r:setup_fs_exec:s0
 /system/bin/smc_pa_ctrl u:object_r:smc_pa_exec:s0
+
+# Hardware tunables
+/sys/devices/virtual/misc/colorcontrol/multiplier u:object_r:hw_tunable:s0
+/sys/vibrator/pwmvalue u:object_r:hw_tunable:s0

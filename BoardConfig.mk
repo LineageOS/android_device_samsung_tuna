@@ -185,6 +185,7 @@ BOARD_SEPOLICY_DIRS += \
 
 BOARD_SEPOLICY_UNION += \
         genfs_contexts \
+        file.te \
         file_contexts \
         fRom.te \
         init.te \
@@ -192,7 +193,8 @@ BOARD_SEPOLICY_UNION += \
         pvrsrvinit.te \
         rild.te \
         setup_fs.te \
-        smc_pa.te
+        smc_pa.te \
+        system_app.te
 
 # Recovery
 RECOVERY_FSTAB_VERSION := 2
