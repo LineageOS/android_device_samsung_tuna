@@ -44,3 +44,7 @@
 # Hardware tunables
 /sys/devices/virtual/misc/colorcontrol/multiplier u:object_r:hw_tunable:s0
 /sys/vibrator/pwmvalue u:object_r:hw_tunable:s0
+
+# Radio
+/sys/devices/platform/omap/omap_i2c.4/i2c-4/4-0025/switch u:object_r:radio_sysfs:s0
+/sys/kernel/slab/:at-0000056/order u:object_r:radio_sysfs:s0
