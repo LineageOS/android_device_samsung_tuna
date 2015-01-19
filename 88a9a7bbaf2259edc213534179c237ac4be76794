@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a9d85d2_be5597c7",
+        "filename": "sepolicy/setup_fs.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2015-01-19T19:10:44Z",
+      "side": 1,
+      "message": "I intentionally didn\u0027t add this, see http://review.cyanogenmod.org/#/c/79890/",
+      "revId": "88a9a7bbaf2259edc213534179c237ac4be76794",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
