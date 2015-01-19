@@ -1,1 +1,2 @@
 type hw_tunable, file_type;
+type radio_sysfs, sysfs_type;

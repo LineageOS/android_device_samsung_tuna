@@ -190,6 +190,7 @@ BOARD_SEPOLICY_UNION += \
         fRom.te \
         init.te \
         mediaserver.te \
+        platform_app.te \
         pvrsrvinit.te \
         rild.te \
         setup_fs.te \
