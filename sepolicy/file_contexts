@@ -38,3 +38,5 @@
 # System binaries
 /system/bin/pvrsrvinit u:object_r:pvrsrvinit_exec:s0
 /system/vendor/bin/fRom u:object_r:fRom_exec:s0
+/system/bin/setup_fs u:object_r:setup_fs_exec:s0
+/system/bin/smc_pa_ctrl u:object_r:smc_pa_exec:s0
