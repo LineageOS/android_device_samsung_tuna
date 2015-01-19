@@ -1,0 +1,1 @@
+allow system_app hw_tunable:file write;
