@@ -215,6 +215,13 @@ PRODUCT_PACKAGES += \
 	e2fsck \
 	setup_fs
 
+# F2FS filesystem
+PRODUCT_PACKAGES += \
+        mkfs.f2fs \
+        fsck.f2fs \
+        fibmap.f2fs \
+        f2fstat
+
 # DCC
 PRODUCT_PACKAGES += \
     dumpdcc
