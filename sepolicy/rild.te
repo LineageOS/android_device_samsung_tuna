@@ -4,3 +4,7 @@ allow rild system_data_file:dir create_dir_perms;
 allow rild system_data_file:file create_file_perms;
 allow rild self:process execmem;
 allow rild block_device:dir search;
+allow rild proc_net:file write;
+allow rild sysfs:file write;
+allow rild system_data_file:sock_file { unlink create };
+
