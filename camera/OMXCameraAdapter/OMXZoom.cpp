@@ -24,6 +24,18 @@
 #include "CameraHal.h"
 #include "OMXCameraAdapter.h"
 
+namespace {
+
+// Experimentally determined values that make
+// overlapping bands go away when previewing /
+// recording in video mode. Exact values are not
+// important, as well as keeping them power-of-two -
+// but it just "looks nicer" :-)
+const int32_t FrontSensorVideoMinZoom = 66816; // 65536 + 1280
+const int32_t BackSensorVideoMinZoom = 66304; // 65536 + 768
+
+}
+
 namespace Ti {
 namespace Camera {
 
@@ -45,6 +57,16 @@ const int32_t OMXCameraAdapter::ZOOM_STEPS [ZOOM_STAGES] =  {
                                 456131, 472515, 488899, 506593,
                                 524288 };
 
+int32_t OMXCameraAdapter::getZoomStep(int index)
+{
+    if (index != 0 || !mPrevZoomModeIsVideo) {
+        return OMXCameraAdapter::ZOOM_STEPS[index];
+    } else if (mSensorIndex == 1) {
+        return FrontSensorVideoMinZoom;
+    } else {
+        return BackSensorVideoMinZoom;
+    }
+}
 
 status_t OMXCameraAdapter::setParametersZoom(const android::CameraParameters &params,
                                              BaseCameraAdapter::AdapterState state)
@@ -98,17 +120,27 @@ status_t OMXCameraAdapter::doZoom(int index)
         ret = -EINVAL;
         }
 
-    if (mPreviousZoomIndx == index )
+    bool curZoomModeIsVideo = (mCapMode == OMXCameraAdapter::VIDEO_MODE ||
+        mCapMode == OMXCameraAdapter::VIDEO_MODE_HQ);
+
+    // When index == 0 and there was a switch between video and non-video mode or between sensors,
+    // we do need to perform the zoom, as 0th index is different between video and non-video modes
+    // and between different sensors.
+    if (mPreviousZoomIndx == index && (index != 0 || (curZoomModeIsVideo == mPrevZoomModeIsVideo &&
+                                                      mSensorIndex == mPrevZoomSensorIndex)))
         {
         return NO_ERROR;
         }
+
+    mPrevZoomModeIsVideo = curZoomModeIsVideo;
+    mPrevZoomSensorIndex = mSensorIndex;
 
     if ( NO_ERROR == ret )
         {
         OMX_INIT_STRUCT_PTR (&zoomControl, OMX_CONFIG_SCALEFACTORTYPE);
         zoomControl.nPortIndex = OMX_ALL;
-        zoomControl.xHeight = ZOOM_STEPS[index];
-        zoomControl.xWidth = ZOOM_STEPS[index];
+        zoomControl.xHeight = getZoomStep(index);
+        zoomControl.xWidth = zoomControl.xHeight;
 
         eError =  OMX_SetConfig(mCameraAdapterParameters.mHandleComp,
                                 OMX_IndexConfigCommonDigitalZoom,
