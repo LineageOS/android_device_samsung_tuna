@@ -1,0 +1,1 @@
+allow surfaceflinger surfaceflinger:unix_stream_socket 0x7704;

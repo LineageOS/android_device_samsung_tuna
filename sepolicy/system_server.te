@@ -2,3 +2,5 @@
 
 # Needed for /system/vendor/lib/hw/gps.omap4.so
 allow system_server system_file:file { execmod };
+
+allow system_server system_server:unix_stream_socket 0x7704;
