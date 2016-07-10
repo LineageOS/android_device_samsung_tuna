@@ -1,2 +1,3 @@
 # bluetooth
 allow bluetooth sysfs:file { write read };
+allow bluetooth self:unix_stream_socket 0x7704;
