@@ -1,0 +1,25 @@
+service tf_daemon /sbin/tf_daemon \
+        -d -c /vendor/etc/smc_normal_world_android_cfg.ini
+        class core
+        user root
+        group root
+        disabled
+        seclabel u:r:recovery:s0
+
+service smc_pa_wvdrm /sbin/smc_pa_ctrl \
+        -c /vendor/etc/smc_normal_world_android_cfg.ini \
+        start /vendor/firmware/smc_pa_wvdrm.ift
+        class core
+        user root
+        group root
+        oneshot
+        disabled
+        seclabel u:r:recovery:s0
+
+on fs
+        mkdir /tee 0755
+        mount ext4 /dev/block/platform/omap/omap_hsmmc.0/by-name/dgs /tee ro
+        start smc_pa_wvdrm
+
+on property:ro.crypto.state=encrypted
+        start tf_daemon
