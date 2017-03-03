@@ -22,6 +22,8 @@
 
 LOCAL_PATH := $(call my-dir)
 
+ifneq ($(filter maguro toro toroplus,$(TARGET_DEVICE)),)
+
 ifeq ($(BOARD_CREATE_TUNA_HDCP_KEYS_SYMLINK), true)
 include $(CLEAR_VARS)
 
@@ -45,5 +47,7 @@ $(LOCAL_BUILT_MODULE):
 	$(hide) touch $@
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
+
+endif
 
 endif
