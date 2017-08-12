@@ -2,7 +2,7 @@ service tf_daemon /sbin/tf_daemon \
         -d -c /vendor/etc/smc_normal_world_android_cfg.ini
         class core
         user root
-        group root
+        group drmpc
         disabled
         seclabel u:r:recovery:s0
 
@@ -11,7 +11,7 @@ service smc_pa_wvdrm /sbin/smc_pa_ctrl \
         start /vendor/firmware/smc_pa_wvdrm.ift
         class core
         user root
-        group root
+        group drmrpc
         oneshot
         disabled
         seclabel u:r:recovery:s0
