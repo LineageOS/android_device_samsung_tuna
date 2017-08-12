@@ -40,3 +40,24 @@ allow recovery { efs_file radio_efs_file bluetooth_efs_file }:file { getattr ope
 
 # For rebooting in tunasetup
 allow recovery powerctl_prop:property_service set;
+
+# For decryption
+allow recovery tee_device:chr_file { ioctl open read write };
+#============= healthd ==============
+allow healthd device:dir write;
+
+#============= init ==============
+allow init ashmem_device:chr_file execute;
+allow init block_device:blk_file write;
+allow init graphics_device:chr_file { ioctl write };
+allow init init_tmpfs:file append;
+allow init input_device:chr_file ioctl;
+allow init property_socket:sock_file write;
+allow init self:process execmem;
+allow init tee_device:chr_file rw_file_perms;
+
+
+allow init unlabeled:dir search;
+allow init tee_file:dir rw_dir_perms;
+allow init tee_file:file create_file_perms;
+allow init labeledfs:filesystem associate;
