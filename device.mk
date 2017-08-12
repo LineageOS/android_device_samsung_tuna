@@ -26,6 +26,8 @@ TARGET_BOARD_OMAP_CPU := 4460
 
 $(call inherit-product-if-exists, hardware/ti/omap4/omap4.mk)
 
+$(call inherit-product-if-exists, device/samsung/tuna/twrp.mk)
+
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_FOLDER)/overlay
 
 PRODUCT_AAPT_CONFIG := normal
