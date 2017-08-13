@@ -18,8 +18,11 @@ service smc_pa_wvdrm /sbin/smc_pa_ctrl \
 
 on fs
         mkdir /tee 0755
-        mount ext4 /dev/block/platform/omap/omap_hsmmc.0/by-name/dgs /tee ro
+        mount ext4 /dev/block/platform/omap/omap_hsmmc.0/by-name/dgs /tee rw
         start smc_pa_wvdrm
 
 on property:ro.crypto.state=encrypted
         start tf_daemon
+
+on boot
+		write /proc/sys/kernel/printk 8 8 8 8
