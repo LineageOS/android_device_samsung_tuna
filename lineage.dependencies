@@ -1,0 +1,7 @@
+[
+ {
+   "repository": "android_kernel_ti_omap4",
+   "target_path": "kernel/ti/omap4"
+ }
+]
+
