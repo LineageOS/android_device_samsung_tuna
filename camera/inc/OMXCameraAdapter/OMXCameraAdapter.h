@@ -536,9 +536,7 @@ private:
     //Digital zoom
     status_t setParametersZoom(const android::CameraParameters &params,
                                BaseCameraAdapter::AdapterState state);
-#ifdef CAMERAHAL_TUNA
     int32_t getZoomStep(int index);
-#endif
     status_t doZoom(int index);
     status_t advanceZoom();
 

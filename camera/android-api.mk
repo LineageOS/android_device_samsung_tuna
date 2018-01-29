@@ -1,6 +1,10 @@
 
 # Makefile variables and C/C++ macros to recognize API level
+ANDROID_API_O_OR_LATER :=
+ANDROID_API_N_MR1_OR_LATER :=
+ANDROID_API_N_OR_LATER :=
 ANDROID_API_MM_OR_LATER :=
+ANDROID_API_LP_MR1_OR_LATER :=
 ANDROID_API_LP_OR_LATER :=
 ANDROID_API_KK_OR_LATER :=
 ANDROID_API_JB_MR1_OR_LATER :=
@@ -8,9 +12,25 @@ ANDROID_API_JB_OR_LATER :=
 ANDROID_API_ICS_OR_LATER :=
 ANDROID_API_CFLAGS :=
 
+ifeq ($(shell test $(PLATFORM_SDK_VERSION) -ge 26 || echo 1),)
+    ANDROID_API_O_OR_LATER := true
+    ANDROID_API_CFLAGS += -DANDROID_API_O_OR_LATER
+endif
+ifeq ($(shell test $(PLATFORM_SDK_VERSION) -ge 25 || echo 1),)
+    ANDROID_API_N_MR1_OR_LATER := true
+    ANDROID_API_CFLAGS += -DANDROID_API_N_MR1_OR_LATER
+endif
+ifeq ($(shell test $(PLATFORM_SDK_VERSION) -ge 24 || echo 1),)
+    ANDROID_API_N_OR_LATER := true
+    ANDROID_API_CFLAGS += -DANDROID_API_N_OR_LATER
+endif
 ifeq ($(shell test $(PLATFORM_SDK_VERSION) -ge 23 || echo 1),)
     ANDROID_API_MM_OR_LATER := true
     ANDROID_API_CFLAGS += -DANDROID_API_MM_OR_LATER
+endif
+ifeq ($(shell test $(PLATFORM_SDK_VERSION) -ge 22 || echo 1),)
+    ANDROID_API_LP_MR1_OR_LATER := true
+    ANDROID_API_CFLAGS += -DANDROID_API_LP_MR1_OR_LATER
 endif
 ifeq ($(shell test $(PLATFORM_SDK_VERSION) -ge 20 || echo 1),)
     ANDROID_API_LP_OR_LATER := true
@@ -34,7 +54,10 @@ ifeq ($(shell test $(PLATFORM_SDK_VERSION) -ge 14 || echo 1),)
 endif
 
 define clear-android-api-vars
+$(eval ANDROID_API_N_MR1_OR_LATER:=) \
+$(eval ANDROID_API_N_OR_LATER:=) \
 $(eval ANDROID_API_MM_OR_LATER:=) \
+$(eval ANDROID_API_LP_MR1_OR_LATER:=) \
 $(eval ANDROID_API_LP_OR_LATER:=) \
 $(eval ANDROID_API_KK_OR_LATER:=) \
 $(eval ANDROID_API_JB_MR1_OR_LATER:=) \

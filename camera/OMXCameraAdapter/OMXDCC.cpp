@@ -27,12 +27,13 @@
 #include "OMXDCC.h"
 #include <utils/String8.h>
 #include <utils/Vector.h>
+#include "OMX_TI_IVCommon.h"
 
 namespace Ti {
 namespace Camera {
 
 #ifndef MOTOROLA_CAMERA
-android::String8 DCCHandler::DCCPath("/data/misc/camera/");
+android::String8 DCCHandler::DCCPath(DCC_PATH);
 #else
 android::String8 DCCHandler::DCCPath("/system/etc/omapcam/");
 #endif
@@ -119,7 +120,7 @@ OMX_ERRORTYPE DCCHandler::initDCC(OMX_HANDLETYPE hComponent)
         goto EXIT;
     }
 
-    dccbuf_size = readDCCdir(dccBuffer[0].mapped, dccDirs);
+    dccbuf_size = readDCCdir((OMX_U8 *)dccBuffer[0].mapped, dccDirs);
     CAMHAL_ASSERT_X(dccbuf_size > 0,"ERROR in copy DCC files into buffer");
 
     eError = sendDCCBufPtr(hComponent, dccBuffer);
@@ -162,7 +163,7 @@ OMX_ERRORTYPE DCCHandler::sendDCCBufPtr(OMX_HANDLETYPE hComponent,
     return eError;
 }
 
-size_t DCCHandler::readDCCdir(OMX_PTR buffer,
+size_t DCCHandler::readDCCdir(OMX_U8* buffer,
                           const android::Vector<android::String8 *> &dirPaths)
 {
     FILE *pFile;
