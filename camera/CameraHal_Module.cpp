@@ -50,7 +50,7 @@ static int camera_get_number_of_cameras(void);
 static int camera_get_camera_info(int camera_id, struct camera_info *info);
 
 static struct hw_module_methods_t camera_module_methods = {
-        open: camera_device_open
+    .open = camera_device_open
 };
 
 } // namespace Camera
@@ -58,19 +58,30 @@ static struct hw_module_methods_t camera_module_methods = {
 
 
 camera_module_t HAL_MODULE_INFO_SYM = {
-    common: {
-         tag: HARDWARE_MODULE_TAG,
-         version_major: 1,
-         version_minor: 0,
-         id: CAMERA_HARDWARE_MODULE_ID,
-         name: "TI OMAP CameraHal Module",
-         author: "TI",
-         methods: &Ti::Camera::camera_module_methods,
-         dso: NULL, /* remove compilation warnings */
-         reserved: {0}, /* remove compilation warnings */
+    .common = {
+         .tag = HARDWARE_MODULE_TAG,
+         .module_api_version = 1,
+         .hal_api_version = 0,
+         .id = CAMERA_HARDWARE_MODULE_ID,
+         .name = "TI OMAP CameraHal Module",
+         .author = "TI",
+         .methods = &Ti::Camera::camera_module_methods,
+         .dso = NULL, /* remove compilation warnings */
+         .reserved = {0}, /* remove compilation warnings */
     },
-    get_number_of_cameras: Ti::Camera::camera_get_number_of_cameras,
-    get_camera_info: Ti::Camera::camera_get_camera_info,
+    .get_number_of_cameras = Ti::Camera::camera_get_number_of_cameras,
+    .get_camera_info = Ti::Camera::camera_get_camera_info,
+    /* remove compilation warnings: */
+    .set_callbacks = NULL,
+    .get_vendor_tag_ops = NULL,
+#ifdef ANDROID_API_LP_OR_LATER
+    .open_legacy = NULL,
+#ifdef ANDROID_API_MM_OR_LATER
+    .set_torch_mode = NULL,
+    .init = NULL,
+#endif
+#endif
+    .reserved = {0},
 };
 
 

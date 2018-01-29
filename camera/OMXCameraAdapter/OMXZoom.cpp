@@ -26,10 +26,22 @@
 
 #ifdef CAMERAHAL_TUNA
 namespace {
-    // Experimentally determined values that make
-    // overlapping bands go away in video mode.
-    const int32_t FrontSensorVideoMinZoom = 66816; // 65536 + 1280
-    const int32_t BackSensorVideoMinZoom = 66304; // 65536 + 768
+
+// On tuna devices in video preview mode (front camera) or video recording
+// mode (both front and back cameras) there are horizontal colored bands
+// at the top or bottom of the video, which are duplicate parts of the image
+// from the opposite sensor edge. It's unclear what is the exact reason for
+// that (could be an issue with Ducati processing algos?), but performing
+// a tiny bit of digital zoom to exclude these bands works just fine and,
+// while hacky, is still better than having videos with these bands.
+//
+// The values below were determined experimentally, both of them probably
+// can be made slightly smaller - but I didn't bother to find the exact
+// thresholds, and also keeping them close to the powers of two, while not
+// strictly necessary, just looks nice.
+const int32_t FrontSensorVideoMinZoom = 66816; // 65536 + 1280
+const int32_t BackSensorVideoMinZoom = 66304; // 65536 + 768
+
 }
 #endif
 
@@ -54,9 +66,9 @@ const int32_t OMXCameraAdapter::ZOOM_STEPS [ZOOM_STAGES] =  {
                                 456131, 472515, 488899, 506593,
                                 524288 };
 
-#ifdef CAMERAHAL_TUNA
 int32_t OMXCameraAdapter::getZoomStep(int index)
 {
+#ifdef CAMERAHAL_TUNA
     if (index != 0 || !mPrevZoomModeIsVideo) {
         return OMXCameraAdapter::ZOOM_STEPS[index];
     } else if (mSensorIndex == 1) {
@@ -64,8 +76,10 @@ int32_t OMXCameraAdapter::getZoomStep(int index)
     } else {
         return BackSensorVideoMinZoom;
     }
-}
+#else
+    return OMXCameraAdapter::ZOOM_STEPS[index];
 #endif
+}
 
 status_t OMXCameraAdapter::setParametersZoom(const android::CameraParameters &params,
                                              BaseCameraAdapter::AdapterState state)
@@ -119,12 +133,13 @@ status_t OMXCameraAdapter::doZoom(int index)
         ret = -EINVAL;
         }
 
+#ifdef CAMERAHAL_TUNA
     bool curZoomModeIsVideo = (mCapMode == OMXCameraAdapter::VIDEO_MODE ||
         mCapMode == OMXCameraAdapter::VIDEO_MODE_HQ);
 
     // When index == 0 and there was a switch between video and non-video mode or between sensors,
-    // we do need to perform the zoom, as 0th index is different between video and non-video modes
-    // and between different sensors.
+    // we do need to perform the zoom, as zoom values corresponding to 0th index are different
+    // for tuna devices between video and non-video modes and between different sensors.
     if (mPreviousZoomIndx == index && (index != 0 || (curZoomModeIsVideo == mPrevZoomModeIsVideo &&
                                                       mSensorIndex == mPrevZoomSensorIndex)))
         {
@@ -133,15 +148,19 @@ status_t OMXCameraAdapter::doZoom(int index)
 
     mPrevZoomModeIsVideo = curZoomModeIsVideo;
     mPrevZoomSensorIndex = mSensorIndex;
+#else
+    if (mPreviousZoomIndx == index )
+        {
+        return NO_ERROR;
+        }
+#endif
 
     if ( NO_ERROR == ret )
         {
         OMX_INIT_STRUCT_PTR (&zoomControl, OMX_CONFIG_SCALEFACTORTYPE);
         zoomControl.nPortIndex = OMX_ALL;
-#ifdef CAMERAHAL_TUNA
         zoomControl.xHeight = getZoomStep(index);
         zoomControl.xWidth = zoomControl.xHeight;
-#endif
 
         eError =  OMX_SetConfig(mCameraAdapterParameters.mHandleComp,
                                 OMX_IndexConfigCommonDigitalZoom,
