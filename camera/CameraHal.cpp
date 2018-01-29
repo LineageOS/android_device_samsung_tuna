@@ -599,6 +599,13 @@ int CameraHal::setParameters(const android::CameraParameters& params)
             if (isParameterValid(valstr, mCameraProperties->get(CameraProperties::SUPPORTED_FOCUS_MODES))) {
                 CAMHAL_LOGDB("Focus mode set %s", valstr);
 
+#ifdef CAMERAHAL_TUNA
+                // FOCUS_MODE_CONTINUOUS_PICTURE and FOCUS_MODE_CONTINUOUS_VIDEO are the same in Tuna Ducati
+                // implementation (both point to OMX_IMAGE_FocusControlAuto), so setting / resetting the video
+                // mode based on this distinction achieves nothing but constant preview restarts. Don't bother
+                // with anything mode-related here at all as mode changes will be handled by other parts of
+                // setParameters() as appropriate.
+#else
                 // we need to take a decision on the capture mode based on whether CAF picture or
                 // video is chosen so the behavior of each is consistent to the application
                 if(strcmp(valstr, android::CameraParameters::FOCUS_MODE_CONTINUOUS_PICTURE) == 0){
@@ -606,6 +613,7 @@ int CameraHal::setParameters(const android::CameraParameters& params)
                 } else if (strcmp(valstr, android::CameraParameters::FOCUS_MODE_CONTINUOUS_VIDEO) == 0){
                     restartPreviewRequired |= setVideoModeParameters(params);
                 }
+#endif
 
                 mParameters.set(android::CameraParameters::KEY_FOCUS_MODE, valstr);
              } else {
@@ -1589,7 +1597,11 @@ status_t CameraHal::allocVideoBufs(uint32_t width, uint32_t height, uint32_t buf
       for (unsigned int i = 0; i< bufferCount; i++){
         android::GraphicBufferAllocator &GrallocAlloc = android::GraphicBufferAllocator::get();
         buffer_handle_t handle;
+#ifdef ANDROID_API_N_MR1_OR_LATER
+        ret = GrallocAlloc.allocate(width, height, HAL_PIXEL_FORMAT_NV12, CAMHAL_GRALLOC_USAGE, &handle, &stride, i, "OMAP Camera");
+#else
         ret = GrallocAlloc.alloc(width, height, HAL_PIXEL_FORMAT_NV12, CAMHAL_GRALLOC_USAGE, &handle, &stride);
+#endif
         if (ret != NO_ERROR){
           CAMHAL_LOGEA("Couldn't allocate video buffers using Gralloc");
           ret = -NO_MEMORY;
