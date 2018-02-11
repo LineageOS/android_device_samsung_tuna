@@ -46,6 +46,9 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=$(TARGET_BOOTLOADER_BOARD_NAME)
 TARGET_KERNEL_CONFIG := tuna_defconfig
 TARGET_KERNEL_SOURCE := kernel/ti/omap4
 
+# Use the standard ION driver
+BOARD_USE_TI_LIBION := false
+
 TI_CAMERAHAL_USES_LEGACY_DOMX_DCC := true
 TI_CAMERAHAL_INTERFACE := OMX
 DOMX_TUNA := true
