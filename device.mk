@@ -41,7 +41,6 @@ PRODUCT_PACKAGES += \
 	lights.tuna \
 	nfc.tuna \
 	libpn544_fw \
-	power.tuna \
 	sensors.tuna
 
 # RIL
